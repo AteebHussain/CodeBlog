@@ -28,24 +28,23 @@ const About = () => {
       <Wrapper>
         <Typography variant="h3">CodeBlog</Typography>
         <Text variant="h5">
-          Introducing DSA Clipper, a groundbreaking project designed to foster a
-          vibrant community of knowledge-sharing in the realm of Data Structures
-          and Algorithms (DSA). With DSA Clipper, individuals from all walks of
-          life can create their own accounts and contribute their unique DSA
+          Introducing CodeBlog, a groundbreaking project designed to foster a
+          vibrant community of knowledge-sharing in the realm of computer science and engineering. With CodeBlog, individuals from all walks of
+          life can create their own accounts and contribute their unique code,
           shortcuts or algorithms using their preferred approach. This platform
           serves as a haven for enthusiasts and professionals alike, connecting
-          them with like-minded individuals passionate about DSA. By sharing
+          them with like-minded individuals. By sharing
           their valuable insights and experiences, users empower others to learn
-          and grow. The extensive collection of content available on DSA Clipper
+          and grow. The extensive collection of content available on CodeBlog
           ensures a diverse range of perspectives and approaches, enabling users
-          to gain a comprehensive understanding of DSA principles.
+          to gain a comprehensive understanding of computer science principles.
           <br />
           <br />
           Furthermore, the interactive nature of the platform allows users to
           engage with the shared content, leaving comments and initiating
           discussions. Authors retain the freedom to update their posts,
           guaranteeing that the information remains current and relevant.
-          Embrace the power of collaborative learning and join DSA Clipper today
+          Embrace the power of collaborative learning and join CodeBlog today
           to embark on an enriching journey of knowledge exchange and personal
           growth.
           <br />

@@ -38,46 +38,44 @@ const Contact = () => {
       <Wrapper>
         <Typography variant="h3">Getting in touch is easy!</Typography>
         <Text variant="h5">
-          I'm Akhilesh Kumar Mishra, currently in the final year of BTech in
+          I'm Syed Ateeb, currently in the final year of BTech in
           Computer Science & Engineering from NIT Jamshedpur. I have a keen
           interest in web development and problem-solving, and I love combining
-          both of these passions. In addition, I hold the position of Team
-          Secretary of the Web Team at our college, where I am along with the
-          team responsible for maintaining and updating our official website,{" "}
-          <Link
+          both of these passions. I design and code beautifully simple things and I enjoy creating things that live on the internet. I like to code things from scratch, and enjoy bringing ideas to life in the browser.{" "}
+          {/* <Link
             href="https://www.nitjsr.ac.in/Clubs/Webteam"
             color="inherit"
             target="_blank"
           >
             nitjsr.ac.in.
-          </Link>
+          </Link> */}
         </Text>
         <StyledFooter variant="h5">
           Reach out to me on
           {"\n"}
           <Link
-            href="https://www.github.com/iamakhileshmishra"
+            href="https://github.com/AteebHussain/"
             color="inherit"
             target="_blank"
           >
             <GitHub />
           </Link>
           <Link
-            href="mailto:contactakhileshmishra@gmail.com?Subject=Hey! I wana connect with you regarding your DSA Clipper Project"
+            href="mailto:syedateebhussain123@gmail.com?Subject=Hey! I wanna connect with you regarding your project"
             target="_blank"
             color="inherit"
           >
             <Email />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/iamakhileshmishra"
+            href="https://www.linkedin.com/in/syed-ateeb-359867225/"
             color="inherit"
             target="_blank"
           >
             <LinkedIn />
           </Link>
           <Link
-            href="https://www.instagram.com/iamakhileshmishra/"
+            href="https://www.instagram.com/ateeeeeeeb_"
             color="inherit"
             target="_blank"
           >
