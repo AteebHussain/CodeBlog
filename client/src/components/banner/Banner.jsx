@@ -26,7 +26,7 @@ const Banner = () => {
     
     return (
         <Image>
-            <Heading>DSA Clipper</Heading>
+            <Heading>CodeBlog</Heading>
         </Image>
     )
 }
