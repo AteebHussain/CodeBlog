@@ -26,7 +26,7 @@ const About = () => {
     <Box>
       <Banner />
       <Wrapper>
-        <Typography variant="h3">DSA Clipper</Typography>
+        <Typography variant="h3">CodeBlog</Typography>
         <Text variant="h5">
           Introducing DSA Clipper, a groundbreaking project designed to foster a
           vibrant community of knowledge-sharing in the realm of Data Structures
