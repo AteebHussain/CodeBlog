@@ -10,14 +10,17 @@ const Component = styled(Box)`
     width: 400px;
     margin: auto;
     box-shadow: 5px 2px 5px 2px rgb(0 0 0/ 0.6);
+    background-color: #fff;
 `;
 
-const Image = styled('img')({
-    width: 100,
-    display: 'flex',
-    margin: 'auto',
-    padding: '50px 0 0'
-});
+const Image = styled('img')`
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: -100px;
+    padding: 0px 0px 0px;
+`;
 
 const Wrapper = styled(Box)`
     padding: 25px 35px;
@@ -79,6 +82,8 @@ const Login = ({ isUserAuthenticated }) => {
 
     const navigate = useNavigate();
     const { setAccount } = useContext(DataContext);
+    const [capsLockOn, setCapsLockOn] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
 
     
     useEffect(() => {
@@ -91,6 +96,11 @@ const Login = ({ isUserAuthenticated }) => {
 
     const onInputChange = (e) => {
         setSignup({ ...signup, [e.target.name]: e.target.value });
+    }
+
+    const handleCapsLockWarning = (e) => {
+        const isCapsLockOn = e.getModifierState && e.getModifierState('CapsLock');
+        setCapsLockOn(isCapsLockOn);
     }
 
     const loginUser = async () => {
@@ -128,12 +138,20 @@ const Login = ({ isUserAuthenticated }) => {
     return (
         <Component>
             <Box>
-                <Image src="/logo.png" alt="blog" />
+                <Image src="/2.png" alt="blog" />
                 {
                     account === 'login' ?
                         <Wrapper>
                             <TextField variant="standard" value={login.username} onChange={(e) => onValueChange(e)} name='username' label='Enter Username' />
-                            <TextField variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
+                            <div className="password-input">
+                                <TextField variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label='Enter Password' type={showPassword ? "text" : "password"} />
+                                <span
+                                    className="password-toggle"
+                                    onClick={() => setShowPassword(!showPassword)}
+                                >
+                                    {showPassword ? "Hide" : "Show"}
+                                </span>
+                            </div>
 
                             {error && <Error>{error}</Error>}
 

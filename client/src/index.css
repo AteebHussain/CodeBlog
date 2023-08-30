@@ -1,16 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	/* --text: rgb(0, 5, 2);
+	--background: rgb(226, 253, 237);
+	--primary: rgb(9, 129, 55);
+	--secondary: rgb(207, 252, 224);
+	--accent: rgb(17, 238, 102); */
+
+	--text: #fbfcfe;
+	--background: #050f1f;
+	--primary: #ff9800;
+	--secondary: #42a0a0;
+	--accent: #a8f0c2;
+}
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--background);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
+.password-input {
+	position: relative;
+}
+
+.password-toggle {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.caps-lock-warning {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}

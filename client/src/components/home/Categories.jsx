@@ -5,20 +5,21 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { categories } from '../../constants/data';
 
 const StyledTable = styled(Table)`
-    border: 1px solid rgba(224, 224, 224, 1);
+    border: 1px solid #42a0a0;
 `;
     
 const StyledButton = styled(Button)`
   margin: 20px;
   width: 85%;
-  background: #9681eb;
-  color: #fff;
+  background: #ff9800;
+  color: #fbfcfe;
   text-decoration: none;
 `;
     
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: inherit;
+    // color: inherit;
+    color: #ffffff;
 `;
 
 const Categories = () => {

@@ -1,41 +1,56 @@
+/** @format */
 
-import { AppBar, Toolbar, styled, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { AppBar, Toolbar, styled, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const Component = styled(AppBar)`
-    background: #FFFFFF;
-    color: black;
+	background: #ff9800;
+	color: black;
 `;
 
 const Container = styled(Toolbar)`
-    justify-content: center;
-    & > a {
-        padding: 20px;
-        color: #000;
-        text-decoration: none;
-    }
-`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	// & > a {
+    //     text-decoration: none;
+	// 	padding: 20px;
+	// 	color: #050f1f;
+	// }
+    
+    & > .menu-items {
+        display: flex;
+        // align-items: center;
+        gap: 40px;
+      }
+
+	& > img {
+		max-height: 50px;
+	}
+`;
 
 const Header = () => {
+	const navigate = useNavigate();
 
-    const navigate = useNavigate();
+	const logout = async () => navigate("/account");
 
-    const logout = async () => navigate('/account');
-        
-    return (
-        <Component>
-            <Container>
-                <Link to='/'>HOME</Link>
-                <Link to='/about'>ABOUT</Link>
-                <Link to='/contact'>CONTACT</Link>
-                <Link to='/account'>LOGOUT</Link>
-            </Container>
-        </Component>
-    )
-}
+	return (
+		<Component>
+			<Container>
+				<img src='/web-coding.png' alt='Logo' />
+                <div className="menu-items">
+				    <Link to='/'>HOME</Link>
+				    <Link to='/about'>ABOUT</Link>
+				    <Link to='/contact'>CONTACT</Link>
+				    <Link to='/account'>LOGOUT</Link>
+                </div>
+			</Container>
+		</Component>
+	);
+};
 
 export default Header;
 // import React, { useState, useEffect } from "react";

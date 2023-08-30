@@ -26,12 +26,14 @@ const StyledFormControl = styled(FormControl)`
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  color: #5be9b9;
 `;
 
 const InputTextField = styled(InputBase)`
   flex: 1;
   margin: 0 30px;
   font-size: 25px;
+  color: #5be9b9;
 `;
 
 const initialPost = {

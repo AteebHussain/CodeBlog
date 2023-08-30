@@ -15,10 +15,11 @@ const Wrapper = styled(Box)`
     margin-top: 50px;
   }
   margin-bottom: 50px;
+  color: #ff9800;
 `;
 
 const Text = styled(Typography)`
-  color: #878787;
+  color: #a8f0c2;
 `;
 
 const About = () => {

@@ -16,9 +16,10 @@ const Wrapper = styled(Box)`
     margin-top: 50px;
   }
   margin-bottom: 40px;
+  color: #ff9800;
 `;
 const StyledFooter = styled(Typography)`
-  color: #878787;
+  color: #42a0a0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +29,7 @@ const StyledFooter = styled(Typography)`
 `;
 
 const Text = styled(Typography)`
-  color: #878787;
+color: #a8f0c2;
 `;
 
 const Contact = () => {
@@ -38,10 +39,10 @@ const Contact = () => {
       <Wrapper>
         <Typography variant="h3">Getting in touch is easy!</Typography>
         <Text variant="h5">
-          I'm Syed Ateeb, currently in the final year of BTech in
+          I'm Syed Ateeb, currently in the final year of B.Tech in
           Computer Science & Engineering from NIT Jamshedpur. I have a keen
           interest in web development and problem-solving, and I love combining
-          both of these passions. I design and code beautifully simple things and I enjoy creating things that live on the internet. I like to code things from scratch, and enjoy bringing ideas to life in the browser.{" "}
+          both of these passions. I like to code things from scratch, and enjoy bringing ideas to life in the browser. Whether you have a question or just want to say hi, I’ll try my best to get back to you!. {" "}
           {/* <Link
             href="https://www.nitjsr.ac.in/Clubs/Webteam"
             color="inherit"
@@ -50,38 +51,33 @@ const Contact = () => {
             nitjsr.ac.in.
           </Link> */}
         </Text>
+
+
         <StyledFooter variant="h5">
           Reach out to me on
           {"\n"}
           <Link
             href="https://github.com/AteebHussain/"
-            color="inherit"
-            target="_blank"
-          >
-            <GitHub />
-          </Link>
+            color="#ff9800"
+            target="_blank"><GitHub/></Link>
+
           <Link
             href="mailto:syedateebhussain123@gmail.com?Subject=Hey! I wanna connect with you regarding your project"
             target="_blank"
-            color="inherit"
-          >
-            <Email />
-          </Link>
+            color="#ff9800"><Email /></Link>
+
           <Link
             href="https://www.linkedin.com/in/syed-ateeb-359867225/"
-            color="inherit"
-            target="_blank"
-          >
-            <LinkedIn />
-          </Link>
+            color="#ff9800"
+            target="_blank"><LinkedIn /></Link>
+
           <Link
             href="https://www.instagram.com/ateeeeeeeb_"
-            color="inherit"
-            target="_blank"
-          >
-            <Instagram />
-          </Link>
+            color="#ff9800"
+            target="_blank"><Instagram /></Link>
         </StyledFooter>
+
+
       </Wrapper>
     </Box>
   );

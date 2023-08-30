@@ -30,14 +30,14 @@ const Image = styled('img')({
 const EditIcon = styled(Edit)`
     margin: 5px;
     padding: 5px;
-    border: 1px solid #878787;
+    border: 2px solid #fbfcfe;
     border-radius: 10px;
 `;
 
 const DeleteIcon = styled(Delete)`
     margin: 5px;
     padding: 5px;
-    border: 1px solid #878787;
+    border: 2px solid #fbfcfe;
     border-radius: 10px;
 `;
 
@@ -46,10 +46,11 @@ const Heading = styled(Typography)`
     font-weight: 600;
     text-align: center;
     margin: 50px 0 10px 0;
+    color: #a8f0c2;
 `;
 
 const Author = styled(Box)(({ theme }) => ({
-    color: '#878787',
+    color: '#ff9800',
     display: 'flex',
     margin: '20px 0',
     [theme.breakpoints.down('sm')]: {

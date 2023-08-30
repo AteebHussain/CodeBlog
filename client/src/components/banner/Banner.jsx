@@ -14,7 +14,7 @@ const Image = styled(Box)`
 `;
 
 const Heading = styled(Typography)`
-  font-family: "Yellowtail", cursive;
+  font-family: "SF Pro Text";
   font-size: 70px;
   color: #ffffff;
   line-height: 1;

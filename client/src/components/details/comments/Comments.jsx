@@ -16,7 +16,8 @@ const Container = styled(Box)`
 const Image = styled('img')({
     width: 50,
     height: 50,
-    borderRadius: '50%'
+    borderRadius: '50%',
+    color: '#ff9800',
 });
 
 const StyledTextArea = styled(TextareaAutosize)`
@@ -72,7 +73,7 @@ const Comments = ({ post }) => {
                 <Image src={url} alt="dp" />   
                 <StyledTextArea 
                     rowsMin={5} 
-                    placeholder="what's on your mind?"
+                    placeholder="What's on your mind?"
                     onChange={(e) => handleChange(e)} 
                     value={comment.comments}
                 />

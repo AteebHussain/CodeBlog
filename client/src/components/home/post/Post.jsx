@@ -2,7 +2,7 @@ import { styled, Box, Typography } from "@mui/material";
 import ReactHtmlParser from "react-html-parser";
 
 const Container = styled(Box)`
-  border: 1px solid #d3cede;
+  border: 3px solid #ff9800;
   border-radius: 10px;
   margin: 10px;
   display: flex;
@@ -23,18 +23,20 @@ const Image = styled("img")({
 });
 
 const Text = styled(Typography)`
-  color: #878787;
+  color: orange;
   font-size: 12px;
 `;
 
 const Heading = styled(Typography)`
   font-size: 18px;
   font-weight: 600;
+  color: #ffffff;
 `;
 
 const Details = styled(Typography)`
   font-size: 14px;
   word-break: break-word;
+  color: #ffffff;
 `;
 
 const Post = ({ post }) => {
