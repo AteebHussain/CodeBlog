@@ -20,15 +20,42 @@ const Container = styled(Toolbar)`
 		display: flex;
 		align-items: center;
 		gap: 40px;
+
+		@media (max-width: 600px) {
+			flex-direction: row;
+			gap: 15px;
+		  }
 	}
 
 	& > .menu-items > a {
 		padding: 20px;
 		text-decoration: none;
+		position: relative;
+
+		@media (max-width: 600px) {
+			padding: 1px;
+		  }
 	}
+
+	& > .menu-items > a::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(transparent, #a8f0c2); 
+		transition: height 0.2s; 
+	  }
+	
+	  & > .menu-items > a:hover::before {
+		height: 100%; 
+	  }
 
 	& > img {
 		max-height: 50px;
+		max-height: 30px;
+    }
 	}
 `;
 

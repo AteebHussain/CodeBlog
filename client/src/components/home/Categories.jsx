@@ -12,13 +12,17 @@ const StyledButton = styled(Button)`
   margin: 20px;
   width: 85%;
   background: #ff9800;
-  color: #fbfcfe;
+  color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    background: #a8f0c2;
+    color: black;
+  }
 `;
     
 const StyledLink = styled(Link)`
     text-decoration: none;
-    // color: inherit;
     color: #ffffff;
 `;
 

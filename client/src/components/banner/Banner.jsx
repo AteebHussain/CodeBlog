@@ -20,8 +20,6 @@ const Heading = styled(Typography)`
   line-height: 1;
 `;
 
-
-
 const Banner = () => {
     
     return (
