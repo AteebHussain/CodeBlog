@@ -15,20 +15,29 @@ const Container = styled(Toolbar)`
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	// & > a {
-    //     text-decoration: none;
-	// 	padding: 20px;
-	// 	color: #050f1f;
-	// }
-    
-    & > .menu-items {
-        display: flex;
-        // align-items: center;
-        gap: 40px;
-      }
+
+	& > .menu-items {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	& > .menu-items > a {
+		padding: 20px;
+		text-decoration: none;
+	}
 
 	& > img {
 		max-height: 50px;
+	}
+`;
+
+const HoverableLink = styled(Link)`
+	color: #050f1f;
+	transition: color 0.2s;
+
+	&:hover {
+		color: #a8f0c2;
 	}
 `;
 
@@ -41,12 +50,12 @@ const Header = () => {
 		<Component>
 			<Container>
 				<img src='/web-coding.png' alt='Logo' />
-                <div className="menu-items">
-				    <Link to='/'>HOME</Link>
-				    <Link to='/about'>ABOUT</Link>
-				    <Link to='/contact'>CONTACT</Link>
-				    <Link to='/account'>LOGOUT</Link>
-                </div>
+				<div className='menu-items'>
+					<HoverableLink to='/'>HOME</HoverableLink>
+					<HoverableLink to='/about'>ABOUT</HoverableLink>
+					<HoverableLink to='/contact'>CONTACT</HoverableLink>
+					<HoverableLink to='/account'>LOGOUT</HoverableLink>
+				</div>
 			</Container>
 		</Component>
 	);
