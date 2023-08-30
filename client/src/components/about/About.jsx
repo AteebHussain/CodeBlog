@@ -1,4 +1,4 @@
-import { Box, styled, Typography, Link } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 
 const Banner = styled(Box)`
   background-image: url(https://www.wallpapertip.com/wmimgs/23-236943_us-wallpaper-for-website.jpg);

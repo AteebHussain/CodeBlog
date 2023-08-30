@@ -116,10 +116,10 @@ const CreatePost = () => {
       <br />
       <MonacoEditor
         placeholder="//Write your code here"
-        height="300" // Set the desired height
-        language="cpp" // Set the language (e.g., "javascript", "typescript")
-        theme="vs-dark" // Set the theme ("vs-light" or "vs-dark")
-        value={post.code} // Set the initial value
+        height="300" 
+        language="cpp" 
+        theme="vs-dark" 
+        value={post.code} 
         onChange={(value) => setPost({ ...post, code: value })} // Handle value changes
       />
       <br />

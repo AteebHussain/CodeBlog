@@ -82,7 +82,6 @@ const Login = ({ isUserAuthenticated }) => {
 
     const navigate = useNavigate();
     const { setAccount } = useContext(DataContext);
-    const [capsLockOn, setCapsLockOn] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
 
     
@@ -98,10 +97,6 @@ const Login = ({ isUserAuthenticated }) => {
         setSignup({ ...signup, [e.target.name]: e.target.value });
     }
 
-    const handleCapsLockWarning = (e) => {
-        const isCapsLockOn = e.getModifierState && e.getModifierState('CapsLock');
-        setCapsLockOn(isCapsLockOn);
-    }
 
     const loginUser = async () => {
         let response = await API.userLogin(login);

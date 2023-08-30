@@ -1,6 +1,6 @@
 /** @format */
 
-import { AppBar, Toolbar, styled, Button } from "@mui/material";
+import { AppBar, Toolbar, styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
@@ -46,9 +46,9 @@ const Container = styled(Toolbar)`
 		left: 0;
 		background: linear-gradient(transparent, #a8f0c2); 
 		transition: height 0.2s; 
-	  }
+	}
 	
-	  & > .menu-items > a:hover::before {
+	& > .menu-items > a:hover::before {
 		height: 100%; 
 	  }
 
@@ -64,7 +64,7 @@ const HoverableLink = styled(Link)`
 	transition: color 0.2s;
 
 	&:hover {
-		color: #a8f0c2;
+		color: #fbfcfe;
 	}
 `;
 
