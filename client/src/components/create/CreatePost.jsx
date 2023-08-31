@@ -33,7 +33,7 @@ const InputTextField = styled(InputBase)`
   flex: 1;
   margin: 0 30px;
   font-size: 25px;
-  color: #5be9b9;
+  color: #ff9800;
 `;
 
 const initialPost = {
@@ -89,7 +89,7 @@ const CreatePost = () => {
 
       <StyledFormControl>
         <label htmlFor="fileInput">
-          <Add fontSize="large" color="action" />
+          <Add fontSize="large" color="#ff0000" />
         </label>
         <input
           type="file"
@@ -109,6 +109,7 @@ const CreatePost = () => {
         value={post.description}
         height="300"
         onChange={(value) => setPost({ ...post, description: value })}
+        style={{ color: '#fbfcfe' }} 
       />
       <br />
       <>Write your Code here </>
@@ -120,7 +121,7 @@ const CreatePost = () => {
         language="cpp" 
         theme="vs-dark" 
         value={post.code} 
-        onChange={(value) => setPost({ ...post, code: value })} // Handle value changes
+        onChange={(value) => setPost({ ...post, code: value })} 
       />
       <br />
       <Button onClick={() => savePost()} variant="contained" color="primary">

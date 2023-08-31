@@ -1,9 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
-
 import { Box, Typography, styled } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
 import { Link, useNavigate, useParams } from 'react-router-dom'
-
 import MonacoEditor from "react-monaco-editor"; // Import MonacoEditor
 import { API } from '../../service/api';
 import ReactQuill from "react-quill";
@@ -13,6 +11,7 @@ import { DataContext } from '../../context/DataProvider';
 
 // components
 import Comments from './comments/Comments';
+import { red } from '@mui/material/colors';
 
 const Container = styled(Box)(({ theme }) => ({
     margin: '50px 100px',
@@ -46,11 +45,11 @@ const Heading = styled(Typography)`
     font-weight: 600;
     text-align: center;
     margin: 50px 0 10px 0;
-    color: #a8f0c2;
+    color: #ff9800;
 `;
 
 const Author = styled(Box)(({ theme }) => ({
-    color: '#ff9800',
+    color: '#a8f0c2',
     display: 'flex',
     margin: '20px 0',
     [theme.breakpoints.down('sm')]: {
@@ -103,7 +102,7 @@ const DetailView = () => {
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <Typography>
-              Author: <span style={{ fontWeight: 600 }}>{post.username}</span>
+              Author: <span style={{ fontWeight: 600, }}>{post.username}</span>
             </Typography>
           </Link>
           <Typography style={{ marginLeft: "auto" }}>
@@ -115,6 +114,7 @@ const DetailView = () => {
           value={post.description}
           readOnly={true}
           modules={{ toolbar: false }}
+          style={{ color: '#fbfcfe' }} 
         />
         <br />
         <MonacoEditor
@@ -127,7 +127,8 @@ const DetailView = () => {
             readOnly: true,
             scrollBeyondLastLine: false,
           }}
-          onChange={(value) => setPost({ ...post, code: value })} // Handle value changes
+          onChange={(value) => setPost({ ...post, code: value })} 
+          style={{ color: '#a8f0c2' }} 
         />
         <Comments post={post} />
       </Container>
