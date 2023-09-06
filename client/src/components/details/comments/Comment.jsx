@@ -5,7 +5,7 @@ import { Delete } from '@mui/icons-material';
 
 import { API } from '../../../service/api';
 import { DataContext } from "../../../context/DataProvider";
-
+import axios from "axios";
 const Component = styled(Box)`
     margin-top: 30px;
     background: #F5F5F5;
@@ -37,7 +37,8 @@ const Comment = ({ comment, setToggle }) => {
     const { account } = useContext(DataContext)
     
     const removeComment = async () => {
-       await API.deleteComment(comment._id);
+    //    await API.deletedeleteComment(comment._id);
+       await axios.delete(`https://codeblog-production.up.railway.app/comment/delete/${comment._id}`);
        setToggle(prev => !prev);
     }
 

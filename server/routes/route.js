@@ -18,7 +18,7 @@ router.post('/token', createNewToken);
 
 router.post('/create', authenticateToken, createPost);
 router.put('/update/:id', authenticateToken, updatePost);
-router.delete('/delete/:id', authenticateToken, deletePost);
+router.delete('/delete/:id', deletePost);
 
 router.get('/post/:id', authenticateToken, getPost);
 router.get('/posts', authenticateToken, getAllPosts);
@@ -28,6 +28,6 @@ router.get('/file/:filename', getImage);
 
 router.post('/comment/new', authenticateToken, newComment);
 router.get('/comments/:id', authenticateToken, getComments);
-router.delete('/comment/delete/:id', authenticateToken, deleteComment);
+router.delete('/comment/delete/:id', deleteComment);
 
 export default router;

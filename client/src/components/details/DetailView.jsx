@@ -12,6 +12,7 @@ import { DataContext } from '../../context/DataProvider';
 // components
 import Comments from './comments/Comments';
 import { red } from '@mui/material/colors';
+import axios from 'axios';
 
 const Container = styled(Box)(({ theme }) => ({
     margin: '50px 100px',
@@ -77,7 +78,9 @@ const DetailView = () => {
     }, []);
 
     const deleteBlog = async () => {  
-        await API.deletePost(post._id);
+      console.log("clicked the delete button",post._id);
+        // await axios.deletePost(post._id);
+        await axios.delete(`https://codeblog-production.up.railway.app/delete/${post._id}`);
         navigate('/')
     }
 

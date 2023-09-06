@@ -36,6 +36,7 @@ const InputTextField = styled(InputBase)`
   color: #ff9800;
 `;
 
+
 const initialPost = {
   title: "",
   description: "",
@@ -87,7 +88,7 @@ const CreatePost = () => {
     <Container>
       <Image src={url} alt="post" />
 
-      <StyledFormControl>
+      <FormControl>
         <label htmlFor="fileInput">
           <Add fontSize="large" color="#ff0000" />
         </label>
@@ -102,17 +103,14 @@ const CreatePost = () => {
           name="title"
           placeholder="Title"
         />
-      </StyledFormControl>
+      </FormControl>
 
       <ReactQuill
         placeholder="Express your unique Approach..."
         value={post.description}
         height="300"
         onChange={(value) => setPost({ ...post, description: value })}
-        style={{ color: '#fbfcfe' }} 
       />
-      <br />
-      <>Write your Code here </>
       <br />
       <br />
       <MonacoEditor

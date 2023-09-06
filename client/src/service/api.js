@@ -3,8 +3,8 @@ import axios from 'axios';
 import { API_NOTIFICATION_MESSAGES, SERVICE_URLS } from '../constants/config';
 import { getAccessToken, getType } from '../utils/common-utils';
 
-const API_URL = "https://codeblog-production.up.railway.app/";
-// const API_URL= "http://localhost:8000/"
+// const API_URL = "https://codeblog-production.up.railway.app/";
+const API_URL= "http://localhost:8000/"
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
